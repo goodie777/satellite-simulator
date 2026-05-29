@@ -13,3 +13,8 @@ print(data2.DeltaVy)
 print(data2.DeltaVz)
 
 
+data3 = TC_103(7,16,58)
+
+print(data3.command_id)
+print(data3.operation_code)
+print(data3.payload_id)

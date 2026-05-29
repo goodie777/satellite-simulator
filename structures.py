@@ -13,6 +13,10 @@ class TC_102(Structure):
     ]
 
 class TC_103(Structure):
-    _fields_ = [("command_id", c_uint32)]
+    _fields_ = [
+    ("command_id", c_uint32),
+    ("operation_code", c_uint32),
+    ("payload_id", c_uint32),
+    ]
 
 
