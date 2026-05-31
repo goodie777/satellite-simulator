@@ -19,4 +19,15 @@ class TC_103(Structure):
     ("payload_id", c_uint32),
     ]
 
+# Telemetry Messages (TM). System Health Status 
+
+class TM_201(Structure):
+    _fields_ = [
+        ("status_code", c_uint32),
+        ("cpu_usage", c_float),
+        ("memory_usage", c_float),
+        ("battery_level", c_float)
+    ]
+
+
 
