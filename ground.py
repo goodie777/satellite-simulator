@@ -33,3 +33,11 @@ TM_data2 = TM_202(202,100.0,(c_float * 3)(9.8, 7.7, 5.4))
 print(TM_data2.status_code)
 print(TM_data2.current_altitude)
 print(list(TM_data2.velocity_vector))
+
+
+TM_data3 = TM_203(203,200,300, (c_float * 3)(7.7, 9.9, 11.7))
+
+print(TM_data3.status_code )
+print(TM_data3.payload_id)
+print(TM_data3.operational_status)
+print(list(TM_data3.data_measurements)) 
