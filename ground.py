@@ -27,3 +27,9 @@ print(TM_data1.status_code)
 print(TM_data1.cpu_usage)
 print(TM_data1.memory_usage )
 print(TM_data1.battery_level)
+
+TM_data2 = TM_202(202,100.0,(c_float * 3)(9.8, 7.7, 5.4))
+
+print(TM_data2.status_code)
+print(TM_data2.current_altitude)
+print(list(TM_data2.velocity_vector))
