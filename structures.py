@@ -34,5 +34,14 @@ class TM_202(Structure):
         ("status_code", c_uint32),
         ("current_altitude", c_float ),
         ("velocity_vector", c_float * 3)
-
     ]
+
+class TM_203(Structure):
+    _fields_ = [
+        ("status_code", c_uint32),
+        ("payload_id", c_uint32 ),
+        ("operational_status", c_uint32),
+        ("data_measurements", c_float * 3)
+    ]
+
+
