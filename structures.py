@@ -29,5 +29,10 @@ class TM_201(Structure):
         ("battery_level", c_float)
     ]
 
+class TM_202(Structure):
+    _fields_ = [
+        ("status_code", c_uint32),
+        ("current_altitude", c_float ),
+        ("velocity_vector", c_float * 3)
 
-
+    ]
